@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: yabtaour-ingress
+  namespace: dev
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: yabtaour.local
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: yabtaour-service
+            port:
+              number: 80

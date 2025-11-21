@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yabtaour-app
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yabtaour-app
+  template:
+    metadata:
+      labels:
+        app: yabtaour-app
+    spec:
+      containers:
+      - name: app
+        image: yabtaourargocd/yabtaour-app:v1
+        ports:
+        - containerPort: 80
