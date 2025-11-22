@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: yabtaourargocd/yabtaour-app:v2
+        image: yabtaourargocd/yabtaour-app:v1
         ports:
         - containerPort: 80
