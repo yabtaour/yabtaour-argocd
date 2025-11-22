@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: darkhamid/pt3:v1
+        image: yabtaourargocd/yabtaour-app:v1
         ports:
-        - containerPort: 8888
+        - containerPort: 80
