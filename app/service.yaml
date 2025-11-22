@@ -7,6 +7,6 @@ spec:
   selector:
     app: yabtaour-app
   ports:
-    - port: 80
-      targetPort: 8888
+    - port: 8888
+      targetPort: 80
   type: ClusterIP
